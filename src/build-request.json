@@ -1,0 +1,199 @@
+{
+  "kind": "build_request",
+  "title": "Discademia marketing website (blue & white) with intro and key service sections",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive, single-page marketing website for “Discademia” (online tutoring platform for O/A level students) with a professional blue-and-white theme applied consistently across typography, buttons, section backgrounds, and interactive states.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Make  a website for Discademia an online tutoring platform for students of 0/A levels.",
+          "Have a blue and white Professional theme."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Site renders as a cohesive, professional blue-and-white theme (primary blue, white backgrounds, accessible contrast).",
+        "Layout is responsive and readable on mobile, tablet, and desktop.",
+        "No user-facing text uses placeholder/lorem ipsum; all copy is in English."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a top navigation header with the Discademia brand and anchor links that scroll to each section: Welcome/Intro, 1:1 Tutoring, Faculty, Notes & Mark Schemes, Live Sessions.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Add a welcome intro",
+          "make secions about 1:1 turtoring classes, introducing faculty, notes and mark scehemes, live sessions."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header is visible at the top and works on mobile (collapsed menu or stacked links).",
+        "Clicking each nav item scrolls to the correct section on the page.",
+        "Active/hover styles match the blue/white professional theme."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement a Welcome/Intro hero section with inviting, professional messaging for Discademia, including a short headline, supporting paragraph, and primary call-to-action button (e.g., “Book a Free Consultation” or “Get Started”).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Add a welcome intro but make it inviting and professional."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero includes: headline, supporting text, and at least one CTA button.",
+        "Copy is inviting and professional, explicitly referencing O/A Level tutoring.",
+        "CTA button has clear hover/focus styles and is keyboard accessible."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Add a “1:1 Tutoring Classes” section describing personalized tutoring, subjects/coverage (without inventing specific subject lists unless framed generically), how sessions work, and key benefits in a scannable layout (cards or bullet points).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "make secions about 1:1 turtoring classes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section has a clear title “1:1 Tutoring Classes” (or equivalent) and concise descriptive copy.",
+        "Benefits/process are presented in a scannable format (e.g., 3–6 cards or bullet points).",
+        "Section is reachable from the top navigation anchor link."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add an “Introducing Faculty” section that presents faculty profiles in a grid (e.g., 3–6 cards) with name, role/specialty, short bio, and optional credentials; keep copy professional and non-fictional (use generic placeholders clearly labeled as examples if real names are not provided).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "introducing faculty"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Faculty section displays a responsive card grid with consistent spacing and styling.",
+        "Each card includes: name, role/specialty, and short bio text.",
+        "Content avoids making unverifiable claims; if placeholders are used, they are clearly indicated as sample profiles."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Add a “Notes & Mark Schemes” section describing availability of study notes and mark schemes, how students can use them, and what formats/support are offered (kept general unless specific formats are provided).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "notes and mark scehemes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section includes a clear title and short explanatory copy.",
+        "Section uses a structured layout (e.g., 2–4 feature cards) to communicate what’s included.",
+        "Section is reachable from the top navigation anchor link."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a “Live Sessions” section describing interactive live learning sessions, what students can expect (Q&A, exam practice, revision), and how to join (kept general; no external integrations required).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "live sessions."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section includes a clear title and professional, student-focused description.",
+        "Section visually matches the theme and uses a scannable layout (cards/bullets).",
+        "Section is reachable from the top navigation anchor link."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a footer with Discademia branding and simple contact placeholders (e.g., email and/or social links) without requiring external services; include a short tagline appropriate for an O/A Level tutoring platform.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Make  a website for Discademia an online tutoring platform for students of 0/A levels."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer appears on all screen sizes and matches the overall styling.",
+        "Footer contains at least: brand name, short tagline, and contact placeholders (non-functional is acceptable)."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add the required generated static images to the frontend as static assets and render them in the appropriate sections (logo in header/footer; hero illustration in the intro). Store generated images under frontend/public/assets/generated (no backend image routing).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Make  a website for Discademia... Have a blue and white Professional theme."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are referenced directly by the frontend.",
+        "Discademia logo is displayed in the header and footer.",
+        "Hero illustration is displayed in the welcome/intro section and scales responsively without distortion."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend files under immutable paths must not be edited directly: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Use English for all user-facing text.",
+    "Do not add third-party authentication providers; Internet Identity only (if authentication is introduced later).",
+    "No external databases or third-party backends; keep the site as a static marketing experience unless explicitly expanded."
+  ],
+  "nonGoals": [
+    "Implementing user accounts, login, or student dashboards.",
+    "Building booking/payment flows or Stripe integration.",
+    "Implementing real-time live session video/chat features (only marketing content for live sessions).",
+    "Uploading/downloading notes/mark schemes from the backend."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Discademia logo, clean academic style, blue on white (discademia-logo.dim_512x512.png)",
+      "Hero illustration featuring a student studying with subtle academic icons, minimal modern vector style, blue-and-white palette (discademia-hero-illustration.dim_1600x900.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

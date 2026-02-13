@@ -1,0 +1,215 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Discademia single-page marketing site (blue & white)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a responsive single-page Discademia marketing site with a consistent professional blue-and-white theme and real English copy.",
+      "acceptanceCriteria": [
+        "Site renders as a cohesive, professional blue-and-white theme (primary blue, white backgrounds, accessible contrast).",
+        "Layout is responsive and readable on mobile, tablet, and desktop.",
+        "No user-facing text uses placeholder/lorem ipsum; all copy is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the main single-page marketing layout (sections + shared layout primitives) and apply consistent blue/white styling with Tailwind utility classes."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Define global blue-and-white theme tokens (CSS variables used by Tailwind config), typography defaults, focus rings, and smooth scrolling for anchor navigation."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Ensure document metadata supports the marketing site (title already Discademia; confirm language/viewport remain appropriate)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add a top navigation header with Discademia branding and anchor links to Intro, 1:1 Tutoring, Faculty, Notes & Mark Schemes, and Live Sessions; ensure mobile-friendly behavior.",
+      "acceptanceCriteria": [
+        "Header is visible at the top and works on mobile (collapsed menu or stacked links).",
+        "Clicking each nav item scrolls to the correct section on the page.",
+        "Active/hover styles match the blue/white professional theme."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "create",
+          "description": "Implement a responsive sticky header with brand (logo + Discademia) and anchor navigation, including a mobile toggle menu and themed hover/focus states."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the SiteHeader into the page and ensure each required section has a matching anchor id for scroll navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Implement the Welcome/Intro hero section with headline, supporting paragraph, and a primary CTA button with accessible interaction styles.",
+      "acceptanceCriteria": [
+        "Hero includes: headline, supporting text, and at least one CTA button.",
+        "Copy is inviting and professional, explicitly referencing O/A Level tutoring.",
+        "CTA button has clear hover/focus styles and is keyboard accessible."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/HeroSection.tsx",
+          "operation": "create",
+          "description": "Create the Welcome/Intro hero section with professional O/A Level-focused copy, a primary CTA button, and space for the hero illustration."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add the HeroSection at the top of the single-page flow and ensure its anchor id matches the header nav link."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Add a 1:1 Tutoring Classes section with scannable benefits/process content and navigation anchor support.",
+      "acceptanceCriteria": [
+        "Section has a clear title “1:1 Tutoring Classes” (or equivalent) and concise descriptive copy.",
+        "Benefits/process are presented in a scannable format (e.g., 3–6 cards or bullet points).",
+        "Section is reachable from the top navigation anchor link."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/TutoringSection.tsx",
+          "operation": "create",
+          "description": "Create a scannable 1:1 Tutoring Classes section using cards or bullet lists with general (non-specific) coverage language and clear student benefits."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the TutoringSection in the correct order and add the required anchor id for header navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add an Introducing Faculty section with a responsive grid of profile cards and professional, non-fictional (sample-labeled) content.",
+      "acceptanceCriteria": [
+        "Faculty section displays a responsive card grid with consistent spacing and styling.",
+        "Each card includes: name, role/specialty, and short bio text.",
+        "Content avoids making unverifiable claims; if placeholders are used, they are clearly indicated as sample profiles."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/FacultySection.tsx",
+          "operation": "create",
+          "description": "Implement a responsive faculty profile grid (3–6 cards) with clearly labeled sample names/roles/bios and conservative, professional wording."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the FacultySection and ensure it is reachable via the header anchor link with the correct section id."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Add a Notes & Mark Schemes section describing resources in a structured (cards) layout and connect it to navigation anchors.",
+      "acceptanceCriteria": [
+        "Section includes a clear title and short explanatory copy.",
+        "Section uses a structured layout (e.g., 2–4 feature cards) to communicate what’s included.",
+        "Section is reachable from the top navigation anchor link."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/NotesSection.tsx",
+          "operation": "create",
+          "description": "Create the Notes & Mark Schemes section with 2–4 feature cards describing general availability, usage, and support (no upload/download functionality)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the NotesSection and add/confirm the matching anchor id used by the header navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add a Live Sessions section with a scannable layout describing interactive session expectations and how to join (marketing-only).",
+      "acceptanceCriteria": [
+        "Section includes a clear title and professional, student-focused description.",
+        "Section visually matches the theme and uses a scannable layout (cards/bullets).",
+        "Section is reachable from the top navigation anchor link."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/LiveSessionsSection.tsx",
+          "operation": "create",
+          "description": "Create the Live Sessions section using cards/bullets for Q&A, exam practice, and revision expectations with general guidance on how students can join (no integrations)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the LiveSessionsSection and ensure it has the correct anchor id for header navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add a footer with Discademia branding, a short tagline, and non-functional contact placeholders consistent with the theme.",
+      "acceptanceCriteria": [
+        "Footer appears on all screen sizes and matches the overall styling.",
+        "Footer contains at least: brand name, short tagline, and contact placeholders (non-functional is acceptable)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "create",
+          "description": "Implement a responsive footer with Discademia branding, an O/A Level tutoring tagline, and simple contact placeholders (e.g., email/social text links) without external services."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the SiteFooter at the bottom of the single-page layout and ensure theme consistency with the rest of the page."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add required generated static images under frontend/public/assets/generated and render logo (header/footer) and hero illustration (intro) responsively.",
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are referenced directly by the frontend.",
+        "Discademia logo is displayed in the header and footer.",
+        "Hero illustration is displayed in the welcome/intro section and scales responsively without distortion."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/discademia-logo.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated static image asset at frontend/public/assets/generated/discademia-logo.dim_512x512.png for use as the Discademia logo."
+        },
+        {
+          "path": "frontend/public/assets/generated/discademia-hero-illustration.dim_1600x900.png",
+          "operation": "create",
+          "description": "Add the generated static image asset at frontend/public/assets/generated/discademia-hero-illustration.dim_1600x900.png for use in the hero section."
+        },
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Render the Discademia logo from frontend/public/assets/generated/discademia-logo.dim_512x512.png in the header with appropriate sizing and accessible alt text."
+        },
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Render the Discademia logo from frontend/public/assets/generated/discademia-logo.dim_512x512.png in the footer with appropriate sizing and accessible alt text."
+        },
+        {
+          "path": "frontend/src/components/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Render the hero illustration from frontend/public/assets/generated/discademia-hero-illustration.dim_1600x900.png in a responsive container (preserve aspect ratio; no distortion)."
+        }
+      ]
+    }
+  ]
+}

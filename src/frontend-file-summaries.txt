@@ -1,0 +1,12 @@
+{
+  "frontend/src/index.css": "Global styles with professional blue-and-white OKLCH color system for light and dark modes, smooth scrolling, and custom design tokens for Discademia's brand.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom blue theme colors, Lexend/Inter font families, custom shadows including blue-glow effect, and fade-in animation keyframes.",
+  "frontend/src/App.tsx": "Main application component that renders the complete single-page layout with header, all content sections (hero, tutoring, faculty, notes, live sessions), and footer.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky navigation header with Discademia logo, responsive mobile menu, smooth-scroll anchor links to all sections, and a primary CTA button.",
+  "frontend/src/components/SiteFooter.tsx": "Professional footer with Discademia branding, quick links, social media icons, contact information, and required Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/sections/HeroSection.tsx": "Inviting hero section with compelling headline for O/A Level students, hero illustration, CTA buttons, and statistics showcasing Discademia's impact.",
+  "frontend/src/components/sections/TutoringSection.tsx": "1:1 tutoring section featuring six benefit cards explaining personalized learning, flexible scheduling, focused curriculum, progress tracking, efficient sessions, and proven results.",
+  "frontend/src/components/sections/FacultySection.tsx": "Faculty introduction section with six sample tutor profile cards displaying names, roles, specialties, bios, and subject expertise in a responsive grid layout.",
+  "frontend/src/components/sections/NotesSection.tsx": "Notes and mark schemes section with four resource cards describing study materials, solutions, revision guides, and downloadable resources with a CTA for access.",
+  "frontend/src/components/sections/LiveSessionsSection.tsx": "Live sessions section showcasing three session types (Q&A, group study, exam practice), benefits list, and step-by-step guide for joining sessions."
+}

@@ -1,0 +1,88 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-13T01:53:28.788Z",
+  "summary": "Diff adds a single-page Discademia marketing site with header, hero, tutoring, faculty, notes, live sessions, and footer plus a blue/white theme. However, some acceptance criteria/constraints are not evidenced (notably generated image assets placement and non-fictional faculty copy), and several unrequested features are introduced (Internet Identity/react-query scaffolding, external attribution link, and backend canister stub).",
+  "missing_requirements": [
+    {
+      "id": "REQ-5",
+      "requirement": "Faculty profiles must be professional and non-fictional; if placeholders are used they must be clearly indicated as sample profiles and avoid unverifiable claims.",
+      "reason": "Faculty cards include specific names and credentials/claims (e.g., PhD, Cambridge-certified, 'proven track records') without being labeled as sample placeholders, which risks violating the requirement to avoid unverifiable claims.",
+      "evidence": [
+        "frontend/src/components/sections/FacultySection.tsx"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "requirement": "Add the required generated static images under frontend/public/assets/generated and render them (logo in header/footer; hero illustration in intro).",
+      "reason": "Components reference the expected image paths, but the diff summary does not show the generated image files being added under frontend/public/assets/generated.",
+      "evidence": [
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/components/SiteFooter.tsx",
+        "frontend/src/components/sections/HeroSection.tsx"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "requirement": "Header anchor links should have active/hover styles matching the theme.",
+      "reason": "Hover styles are present, but no active state styling is evidenced in the header navigation (only hover/transition classes shown).",
+      "evidence": [
+        "frontend/src/components/SiteHeader.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity + react-query provider wiring and actor hook added (authentication scaffolding) despite the request being for a static marketing site and non-goals excluding login/accounts.",
+      "reason": "BuildRequest explicitly says keep the site static unless expanded and lists login/accounts as non-goals; diff adds InternetIdentityProvider, useActor, and react-query setup.",
+      "evidence": [
+        "frontend/src/main.tsx",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/hooks/useInternetIdentity.ts"
+      ]
+    },
+    {
+      "description": "External promotional attribution link to caffeine.ai with UTM tracking in the footer.",
+      "reason": "Not requested in REQ-1..REQ-9; adds an external link/attribution beyond simple contact placeholders.",
+      "evidence": [
+        "frontend/src/components/SiteFooter.tsx"
+      ]
+    },
+    {
+      "description": "Backend canister stub (Motoko actor) added.",
+      "reason": "No backend functionality was requested for a static marketing site; adding backend/main.mo is extra/unrequested.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Social media icon set and links added (react-icons/si) beyond the minimal 'contact placeholders' requirement.",
+      "reason": "REQ-8 allows placeholders, but the specific inclusion of multiple social icon components/library is an extra feature not requested explicitly.",
+      "evidence": [
+        "frontend/src/components/SiteFooter.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/SiteFooter.tsx",
+    "frontend/src/components/SiteHeader.tsx",
+    "frontend/src/components/sections/FacultySection.tsx",
+    "frontend/src/components/sections/HeroSection.tsx",
+    "frontend/src/components/sections/LiveSessionsSection.tsx",
+    "frontend/src/components/sections/NotesSection.tsx",
+    "frontend/src/components/sections/TutoringSection.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

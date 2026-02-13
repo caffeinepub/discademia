@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a professional blue-and-white themed marketing website for Discademia, an online tutoring platform for O/A level students, including an inviting welcome intro and sections for 1:1 tutoring, faculty, notes/mark schemes, and live sessions.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Discademia logo, clean academic style, blue on white (discademia-logo.dim_512x512.png)\n- Hero illustration featuring a student studying with subtle academic icons, minimal modern vector style, blue-and-white palette (discademia-hero-illustration.dim_1600x900.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-single-page-marketing-website-for-discademia-online-tutoring-platform-for-o-a-level-students-with-a-professional-blue-and-white-theme-applied-consistently-across-typography-buttons-section-backgrounds-and-interactive-states",
+      "title": "Create a responsive, single-page marketing website for “Discademia” (online tutoring platform for O/A level students) with a professional blue-and-white theme applied consistently across typography, buttons, section backgrounds, and interactive states.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-top-navigation-header-with-the-discademia-brand-and-anchor-links-that-scroll-to-each-section-welcome-intro-1-1-tutoring-faculty-notes-mark-schemes-live-sessions",
+      "title": "Add a top navigation header with the Discademia brand and anchor links that scroll to each section: Welcome/Intro, 1:1 Tutoring, Faculty, Notes & Mark Schemes, Live Sessions.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-welcome-intro-hero-section-with-inviting-professional-messaging-for-discademia-including-a-short-headline-supporting-paragraph-and-primary-call-to-action-button-e-g-book-a-free-consultation-or-get-started",
+      "title": "Implement a Welcome/Intro hero section with inviting, professional messaging for Discademia, including a short headline, supporting paragraph, and primary call-to-action button (e.g., “Book a Free Consultation” or “Get Started”).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-1-1-tutoring-classes-section-describing-personalized-tutoring-subjects-coverage-without-inventing-specific-subject-lists-unless-framed-generically-how-sessions-work-and-key-benefits-in-a-scannable-layout-cards-or-bullet-points",
+      "title": "Add a “1:1 Tutoring Classes” section describing personalized tutoring, subjects/coverage (without inventing specific subject lists unless framed generically), how sessions work, and key benefits in a scannable layout (cards or bullet points).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-introducing-faculty-section-that-presents-faculty-profiles-in-a-grid-e-g-3-6-cards-with-name-role-specialty-short-bio-and-optional-credentials-keep-copy-professional-and-non-fictional-use-generic-placeholders-clearly-labeled-as-examples-if-real-names-are-not-provided",
+      "title": "Add an “Introducing Faculty” section that presents faculty profiles in a grid (e.g., 3–6 cards) with name, role/specialty, short bio, and optional credentials; keep copy professional and non-fictional (use generic placeholders clearly labeled as examples if real names are not provided).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-notes-mark-schemes-section-describing-availability-of-study-notes-and-mark-schemes-how-students-can-use-them-and-what-formats-support-are-offered-kept-general-unless-specific-formats-are-provided",
+      "title": "Add a “Notes & Mark Schemes” section describing availability of study notes and mark schemes, how students can use them, and what formats/support are offered (kept general unless specific formats are provided).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-live-sessions-section-describing-interactive-live-learning-sessions-what-students-can-expect-q-a-exam-practice-revision-and-how-to-join-kept-general-no-external-integrations-required",
+      "title": "Add a “Live Sessions” section describing interactive live learning sessions, what students can expect (Q&A, exam practice, revision), and how to join (kept general; no external integrations required).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-footer-with-discademia-branding-and-simple-contact-placeholders-e-g-email-and-or-social-links-without-requiring-external-services-include-a-short-tagline-appropriate-for-an-o-a-level-tutoring-platform",
+      "title": "Add a footer with Discademia branding and simple contact placeholders (e.g., email and/or social links) without requiring external services; include a short tagline appropriate for an O/A Level tutoring platform.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-required-generated-static-images-to-the-frontend-as-static-assets-and-render-them-in-the-appropriate-sections-logo-in-header-footer-hero-illustration-in-the-intro-store-generated-images-under-frontend-public-assets-generated-no-backend-image-routing",
+      "title": "Add the required generated static images to the frontend as static assets and render them in the appropriate sections (logo in header/footer; hero illustration in the intro). Store generated images under frontend/public/assets/generated (no backend image routing).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a Discademia website with an inviting, professional welcome/intro section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Apply a blue-and-white professional visual theme across the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add a site section describing 1:1 tutoring classes",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add a site section introducing faculty",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add a site section for notes and mark schemes",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add a site section for live sessions",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Discademia",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

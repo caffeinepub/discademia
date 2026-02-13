@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Minimal Motoko actor with no logic implemented.",
+  "feature_evidence.json": "Feature evidence report mapping high-level product features to source files, components, and test IDs.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing the purpose of major frontend files and components.",
+  "frontend/index.css": "Tailwind base stylesheet defining OKLCH brand colors, CSS variables, and light/dark theme tokens.",
+  "frontend/index.html": "HTML entry point that mounts the React app and loads main.tsx.",
+  "frontend/src/App.tsx": "Main React layout assembling the header, all content sections, and footer into a single-page site.",
+  "frontend/src/components/sections/FacultySection.tsx": "Faculty grid section displaying six detailed tutor profiles with bios, roles, and subjects.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section featuring headline, CTAs, stats, and a large illustration with themed visuals.",
+  "frontend/src/components/sections/LiveSessionsSection.tsx": "Renders a section showcasing types of live learning sessions and their benefits using cards and icons.",
+  "frontend/src/components/sections/NotesSection.tsx": "Displays study notes, mark schemes, and downloadable resources in a grid of cards with feature lists.",
+  "frontend/src/components/sections/TutoringSection.tsx": "Presents features of 1:1 tutoring sessions with icon cards and a call-to-action button.",
+  "frontend/src/components/SiteFooter.tsx": "Footer with branding, navigation links, social icons, contact info, and caffeine.ai attribution.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky responsive header with logo, smooth-scroll navigation, and mobile menu toggle.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor based on the current Internet Identity, invalidating related queries when it changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides context and logic for Internet Identity authentication, including login, logout, and stored identity restoration.",
+  "frontend/src/index.css": "Defines Tailwind base styles and custom theme variables for light and dark modes.",
+  "frontend/src/main.tsx": "Bootstraps the React app with Internet Identity and React Query providers.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom colors, fonts, animations, and plugins for the project.",
+  "project_state.json": "Project state describing a marketing website build for Discademia, listing required sections, features, and image assets. Contains versioning, feature definitions, and overall project description."
+}
